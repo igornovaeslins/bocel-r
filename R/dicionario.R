@@ -1,0 +1,23 @@
+#' Livro de códigos do BOCEL
+#'
+#' Uma linha por variável de cada tabela do banco, copiada do
+#' `LIVRO_DE_CODIGOS.csv` da versão 1.1 depositada no Zenodo. O tipo de
+#' armazenamento é o que [bocel_ler()] usa para converter as colunas.
+#'
+#' @format Um tibble com 371 linhas e 9 colunas.
+#' \describe{
+#'   \item{arquivo}{Tabela a que a variável pertence, com extensão.}
+#'   \item{variavel}{Nome da coluna.}
+#'   \item{descricao}{O que a coluna registra.}
+#'   \item{tipo_armazenamento}{texto, inteiro, logico, data ISO ou
+#'     data dd/mm/aaaa.}
+#'   \item{nivel_medida}{Binario, Categorico, Data, Numerico ou Ordinal.}
+#'   \item{fonte}{Origem da informação.}
+#'   \item{preenchimento}{Proporção de linhas preenchidas.}
+#'   \item{cobertura_temporal}{Anos cobertos pela variável.}
+#'   \item{linhas}{Número de linhas da tabela.}
+#' }
+#' @source <https://doi.org/10.5281/zenodo.23035176>
+#' @examples
+#' subset(dicionario, arquivo == "mandatos.csv", c(variavel, descricao))
+"dicionario"

@@ -1,0 +1,31 @@
+Package: bocel
+Title: Acesso ao Banco de Ocupação de Cargos Eletivos (BOCEL)
+Version: 0.1.0
+Authors@R:
+    person("Igor Novaes", "Lins", , "igor.lins@cebrap.org.br",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0510-8355"))
+Description: Baixa do Zenodo e lê as tabelas do Banco de Ocupação de Cargos
+    Eletivos no Brasil (BOCEL), 1998-2024, que registra mandatos, ocupações
+    de cargo com suplência e filiação partidária de presidentes,
+    governadores, senadores e deputados federais. Cada tabela chega com os
+    tipos do livro de códigos e fica guardada em cache por versão do banco.
+    O banco está depositado em <doi:10.5281/zenodo.22896271>.
+License: MIT + file LICENSE
+URL: https://github.com/igornovaeslins/bocel-r,
+    https://doi.org/10.5281/zenodo.22896271
+BugReports: https://github.com/igornovaeslins/bocel-r/issues
+Depends:
+    R (>= 4.1)
+Imports:
+    readr,
+    tibble,
+    tools,
+    utils
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: pt-BR
+LazyData: true
+RoxygenNote: 7.3.2

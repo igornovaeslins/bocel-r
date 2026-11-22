@@ -1,0 +1,14 @@
+bibentry(
+  bibtype = "Misc",
+  title = paste("Banco de Ocupação de Cargos Eletivos no Brasil (BOCEL),",
+                "1998-2024"),
+  author = person("Igor Novaes", "Lins"),
+  year = "2026",
+  publisher = "Zenodo",
+  doi = "10.5281/zenodo.22896271",
+  note = "Cite também o DOI da versão usada, listado em bocel_versoes()",
+  textVersion = paste(
+    "Lins, Igor Novaes (2026). Banco de Ocupação de Cargos Eletivos no",
+    "Brasil (BOCEL), 1998-2024. Zenodo. doi:10.5281/zenodo.22896271"
+  )
+)

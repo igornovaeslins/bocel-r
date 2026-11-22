@@ -57,8 +57,11 @@ ocupacoes |>
 
 ## Citação
 
-`citation("bocel")` devolve a referência do banco. Cite também o DOI da
-versão usada, que `bocel_versoes()` informa.
+`citation("bocel")` devolve a referência do banco e a do pacote. Cite
+também o DOI da versão do banco usada, que `bocel_versoes()` informa. O
+pacote tem DOI próprio no Zenodo,
+[10.5281/zenodo.24433109](https://doi.org/10.5281/zenodo.24433109), que
+aponta sempre para a versão mais recente do código.
 
 ## Contato
 

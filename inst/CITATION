@@ -12,3 +12,18 @@ bibentry(
     "Brasil (BOCEL), 1998-2024. Zenodo. doi:10.5281/zenodo.22896271"
   )
 )
+
+bibentry(
+  bibtype = "Manual",
+  title = paste("bocel: pacote R de acesso ao Banco de Ocupação de Cargos",
+                "Eletivos no Brasil (BOCEL)"),
+  author = person("Igor Novaes", "Lins"),
+  year = "2026",
+  publisher = "Zenodo",
+  doi = "10.5281/zenodo.24433109",
+  textVersion = paste(
+    "Lins, Igor Novaes (2026). bocel: pacote R de acesso ao Banco de",
+    "Ocupação de Cargos Eletivos no Brasil (BOCEL). Zenodo.",
+    "doi:10.5281/zenodo.24433109"
+  )
+)

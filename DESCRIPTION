@@ -7,7 +7,7 @@ Authors@R:
            comment = c(ORCID = "0000-0003-0510-8355",
                        affiliation = "CEBRAP, igor.lins@cebrap.org.br"))
 Description: Downloads from 'Zenodo' and reads the tables of the Brazilian
-    Elective Office Occupancy Database (BOCEL), 1998-2024, which records
+    Elective Office Occupancy Database (BOCEL), 1998-2026, which records
     terms of office, office occupancy including substitutes, and party
     affiliation of presidents, state governors, senators and federal deputies
     in Brazil <doi:10.5281/zenodo.22896271>. Each table is returned with the

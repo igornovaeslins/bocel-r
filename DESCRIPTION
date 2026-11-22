@@ -6,6 +6,10 @@ Authors@R:
            role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0003-0510-8355",
                        affiliation = "CEBRAP, igor.lins@cebrap.org.br"))
+Author: Igor Novaes Lins [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0510-8355>, affiliation: CEBRAP,
+    igor.lins@cebrap.org.br)
+Maintainer: Igor Novaes Lins <igornovaeslins@gmail.com>
 Description: Downloads from 'Zenodo' and reads the tables of the Brazilian
     Elective Office Occupancy Database (BOCEL), 1998-2026, which records
     terms of office, office occupancy including substitutes, and party

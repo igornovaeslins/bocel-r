@@ -19,7 +19,8 @@ reproduzível quando sair uma versão nova.}
 versão. Se `FALSE`, baixa a cada chamada.}
 }
 \value{
-Um tibble.
+Um tibble. Se o Zenodo não responder, a função avisa por
+  mensagem e devolve `NULL`.
 }
 \description{
 Baixa a tabela do registro da versão pedida no Zenodo, guarda o arquivo
@@ -29,7 +30,8 @@ como texto, o que preserva os zeros à esquerda de CPF, título eleitoral
 e códigos do TSE.
 }
 \examples{
-\dontrun{
-mandatos <- bocel_ler("mandatos", versao = "1.1")
+\donttest{
+suplementares <- bocel_ler("eleicoes_suplementares", versao = "1.2",
+                          cache = FALSE)
 }
 }

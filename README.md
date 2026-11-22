@@ -22,7 +22,7 @@ bocel_versoes()   # versões publicadas, com registro e DOI
 bocel_tabelas()   # tabelas disponíveis, com variáveis e linhas
 dicionario        # livro de códigos, uma linha por variável
 
-mandatos <- bocel_ler("mandatos", versao = "1.1")
+mandatos <- bocel_ler("mandatos", versao = "1.2")
 ```
 
 A primeira leitura de cada tabela baixa o arquivo do Zenodo, e as seguintes
@@ -37,17 +37,18 @@ limite de inteiro do R e perderiam o zero à esquerda.
 
 ## Junção de ocupações e pessoas
 
-Na versão 1.1, 658 das 6.287 linhas de `ocupacoes` trazem um `id_pessoa` que
+Nas versões 1.1 e 1.2, 658 das 6.287 linhas de `ocupacoes` trazem um
+`id_pessoa` que
 não está em `pessoas`, quase todas de suplentes e vices que assumiram o cargo.
 A tabela `pessoas_suplentes` cobre 513 dessas linhas, e as 145 restantes não
 têm cadastro em nenhuma das duas tabelas. As duas tabelas não repetem
 `id_pessoa`, e a junção completa empilha as duas antes de cruzar.
 
 ```r
-ocupacoes <- bocel_ler("ocupacoes", versao = "1.1")
+ocupacoes <- bocel_ler("ocupacoes", versao = "1.2")
 cadastro <- dplyr::bind_rows(
-  bocel_ler("pessoas", versao = "1.1"),
-  bocel_ler("pessoas_suplentes", versao = "1.1")
+  bocel_ler("pessoas", versao = "1.2"),
+  bocel_ler("pessoas_suplentes", versao = "1.2")
 )
 
 ocupacoes |>

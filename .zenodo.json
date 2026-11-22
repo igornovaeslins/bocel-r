@@ -1,0 +1,23 @@
+{
+  "title": "bocel: pacote R de acesso ao Banco de Ocupação de Cargos Eletivos no Brasil (BOCEL)",
+  "upload_type": "software",
+  "description": "Pacote R que baixa do Zenodo e lê as tabelas do Banco de Ocupação de Cargos Eletivos no Brasil (BOCEL), com os tipos do livro de códigos e cache por versão do banco. / R package that downloads from Zenodo and reads the tables of the Brazilian Elective Office Occupancy Database (BOCEL).",
+  "creators": [
+    {
+      "name": "Lins, Igor Novaes",
+      "orcid": "0000-0003-0510-8355",
+      "affiliation": "Centro Brasileiro de Análise e Planejamento (CEBRAP)"
+    }
+  ],
+  "license": "mit",
+  "language": "por",
+  "keywords": ["R", "Brasil", "eleições", "cargos eletivos", "suplência", "BOCEL"],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22896271",
+      "relation": "isSupplementTo",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ]
+}

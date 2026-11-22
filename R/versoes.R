@@ -11,11 +11,11 @@
 #' @export
 bocel_versoes <- function() {
   # Versão nova do banco entra aqui, na última posição de cada vetor
-  registro <- c(22896272L, 23035176L)
+  registro <- c(22896272L, 23035176L, 24432652L)
   tibble::tibble(
-    versao = c("1.0", "1.1"),
+    versao = c("1.0", "1.1", "1.2"),
     registro = registro,
-    data = as.Date(c("2026-09-22", "2026-09-29")),
+    data = as.Date(c("2026-09-22", "2026-09-29", "2026-11-22")),
     doi = paste0("10.5281/zenodo.", registro)
   )
 }

@@ -1,16 +1,17 @@
 Package: bocel
-Title: Acesso ao Banco de Ocupação de Cargos Eletivos (BOCEL)
+Title: Access the Brazilian Elective Office Occupancy Database (BOCEL)
 Version: 0.1.0
 Authors@R:
     person("Igor Novaes", "Lins", , "igor.lins@cebrap.org.br",
-           role = c("aut", "cre"),
+           role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0003-0510-8355"))
-Description: Baixa do Zenodo e lê as tabelas do Banco de Ocupação de Cargos
-    Eletivos no Brasil (BOCEL), 1998-2024, que registra mandatos, ocupações
-    de cargo com suplência e filiação partidária de presidentes,
-    governadores, senadores e deputados federais. Cada tabela chega com os
-    tipos do livro de códigos e fica guardada em cache por versão do banco.
-    O banco está depositado em <doi:10.5281/zenodo.22896271>.
+Description: Downloads from 'Zenodo' and reads the tables of the Brazilian
+    Elective Office Occupancy Database (BOCEL), 1998-2024, which records
+    terms of office, office occupancy including substitutes, and party
+    affiliation of presidents, state governors, senators and federal deputies
+    in Brazil <doi:10.5281/zenodo.22896271>. Each table is returned with the
+    column types of the codebook and cached by database version. Function
+    names and documentation are in Portuguese.
 License: MIT + file LICENSE
 URL: https://github.com/igornovaeslins/bocel-r,
     https://doi.org/10.5281/zenodo.22896271

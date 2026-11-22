@@ -1,7 +1,7 @@
 #' Tabelas do BOCEL
 #'
 #' Lista as tabelas que [bocel_ler()] aceita, com o número de variáveis e de
-#' linhas registrado no livro de códigos da versão 1.1. As variáveis de
+#' linhas registrado no livro de códigos da versão 1.2. As variáveis de
 #' cada tabela, com descrição, tipo e fonte, estão em [dicionario].
 #'
 #' @return Um tibble com as colunas `tabela`, `variaveis` e `linhas`.

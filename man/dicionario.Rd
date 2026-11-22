@@ -5,7 +5,7 @@
 \alias{dicionario}
 \title{Livro de códigos do BOCEL}
 \format{
-Um tibble com 371 linhas e 9 colunas.
+Um tibble com 373 linhas e 9 colunas.
 \describe{
   \item{arquivo}{Tabela a que a variável pertence, com extensão.}
   \item{variavel}{Nome da coluna.}
@@ -20,15 +20,18 @@ Um tibble com 371 linhas e 9 colunas.
 }
 }
 \source{
-<https://doi.org/10.5281/zenodo.23035176>
+<https://doi.org/10.5281/zenodo.24432652>
 }
 \usage{
 dicionario
 }
 \description{
 Uma linha por variável de cada tabela do banco, copiada do
-`LIVRO_DE_CODIGOS.csv` da versão 1.1 depositada no Zenodo. O tipo de
-armazenamento é o que [bocel_ler()] usa para converter as colunas.
+`LIVRO_DE_CODIGOS.csv` da versão 1.2 depositada no Zenodo. O tipo de
+armazenamento é o que [bocel_ler()] usa para converter as colunas. As
+versões anteriores do banco têm as mesmas tabelas e tipos, e a 1.2
+acrescentou `origem_partido_ocupante` e `sg_partido_candidatura` a
+`ocupacoes.csv`.
 }
 \examples{
 subset(dicionario, arquivo == "mandatos.csv", c(variavel, descricao))

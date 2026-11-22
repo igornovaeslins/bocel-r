@@ -28,8 +28,8 @@ for (tabela in c("pessoas", "mandatos", "ocupacoes", "filiacoes",
   test_that(paste(tabela, "chega inteira e sem NA criado na conversão"), {
     skip_on_cran()
     skip_if_offline("zenodo.org")
-    dados <- bocel_ler(tabela, versao = "1.1")
-    arquivo <- file.path(tools::R_user_dir("bocel", "cache"), "1.1",
+    dados <- bocel_ler(tabela, versao = "1.2")
+    arquivo <- file.path(tools::R_user_dir("bocel", "cache"), "1.2",
                          paste0(tabela, ".csv"))
     bruto <- readr::read_csv(arquivo, col_types = readr::cols(.default = "c"),
                              progress = FALSE)
@@ -45,10 +45,17 @@ for (tabela in c("pessoas", "mandatos", "ocupacoes", "filiacoes",
 test_that("segunda leitura usa o cache sem baixar de novo", {
   skip_on_cran()
   skip_if_offline("zenodo.org")
-  bocel_ler("pessoas", versao = "1.1")
-  arquivo <- file.path(tools::R_user_dir("bocel", "cache"), "1.1",
+  bocel_ler("pessoas", versao = "1.2")
+  arquivo <- file.path(tools::R_user_dir("bocel", "cache"), "1.2",
                        "pessoas.csv")
   antes <- file.mtime(arquivo)
-  bocel_ler("pessoas", versao = "1.1")
+  bocel_ler("pessoas", versao = "1.2")
   expect_equal(file.mtime(arquivo), antes)
+})
+
+test_that("limpar o cache apaga a pasta da versão", {
+  pasta <- file.path(tools::R_user_dir("bocel", "cache"), "0.0")
+  dir.create(pasta, recursive = TRUE, showWarnings = FALSE)
+  expect_equal(bocel_limpar_cache("0.0"), pasta)
+  expect_false(dir.exists(pasta))
 })

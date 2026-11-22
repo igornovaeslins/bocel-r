@@ -14,10 +14,12 @@
 #' @param cache Se `TRUE`, guarda o arquivo na pasta de cache do R
 #'   ([tools::R_user_dir()]) e o reaproveita nas leituras seguintes da mesma
 #'   versão. Se `FALSE`, baixa a cada chamada.
-#' @return Um tibble.
+#' @return Um tibble. Se o Zenodo não responder, a função avisa por
+#'   mensagem e devolve `NULL`.
 #' @examples
-#' \dontrun{
-#' mandatos <- bocel_ler("mandatos", versao = "1.1")
+#' \donttest{
+#' suplementares <- bocel_ler("eleicoes_suplementares", versao = "1.2",
+#'                           cache = FALSE)
 #' }
 #' @export
 bocel_ler <- function(tabela, versao = NULL, cache = TRUE) {
@@ -41,7 +43,7 @@ bocel_ler <- function(tabela, versao = NULL, cache = TRUE) {
       utils::download.file(url, arquivo, mode = "wb", quiet = TRUE) == 0,
       error = function(e) FALSE, warning = function(w) FALSE)
     if (!baixou) unlink(arquivo)
-    if (!baixou) stop("N\u00e3o baixei ", url, ". Confira a conex\u00e3o.")
+    if (!baixou) return(message("Falha ao baixar ", url, "."))
   }
   dados <- readr::read_csv(arquivo, col_types = readr::cols(.default = "c"),
                            progress = FALSE)

@@ -3,3 +3,7 @@
 ^\.git$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.github$
+^cran-comments\.md$
+^\.zenodo\.json$
+^README\.Rmd$

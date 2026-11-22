@@ -60,6 +60,12 @@ ocupacoes |>
 `citation("bocel")` devolve a referência do banco. Cite também o DOI da
 versão usada, que `bocel_versoes()` informa.
 
+## Contato
+
+Igor Novaes Lins (CEBRAP), igornovaeslins@gmail.com e
+igor.lins@cebrap.org.br. Erros e sugestões podem entrar também como
+[issue](https://github.com/igornovaeslins/bocel-r/issues).
+
 ## Licença
 
 O código do pacote é distribuído sob a licença MIT. Os dados do BOCEL são
